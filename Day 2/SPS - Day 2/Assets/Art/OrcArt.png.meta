@@ -2,16 +2,16 @@ fileFormatVersion: 2
 guid: 84f8cfcd9a05fc24bb172b7a6d8d1973
 TextureImporter:
   fileIDToRecycleName:
-    21300000: OrcRightArm
-    21300002: OrcHead
-    21300004: OrcLeftArm
-    21300006: OrcWeapon
-    21300008: OrcRightHand
-    21300010: OrcBody
-    21300012: OrcLeftHand
-    21300014: OrcPants
-    21300016: OrcRightLeg
-    21300018: OrcLeftLeg
+    21300000: orc _R_arm
+    21300002: orc_head
+    21300004: orc _L_arm
+    21300006: orc_weapon
+    21300008: orc _R_hand
+    21300010: orc_body
+    21300012: orc_L_hand
+    21300014: orc_pants
+    21300016: orc _L_leg
+    21300018: orc _R_leg
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,37 +53,37 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: OrcRightArm
+    - name: orc _L_arm
       rect:
         serializedVersion: 2
         x: 147
         y: 563
         width: 120
         height: 162
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .688409328, y: .818301022}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcHead
+    - name: orc_head
       rect:
         serializedVersion: 2
         x: 350
         y: 678
         width: 243
         height: 181
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .486187994, y: .194040895}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcLeftArm
+    - name: orc _R_arm
       rect:
         serializedVersion: 2
         x: 640
         y: 572
         width: 144
         height: 144
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .219031006, y: .808514893}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcWeapon
+    - name: orc_weapon
       rect:
         serializedVersion: 2
         x: 811
@@ -93,17 +93,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcRightHand
+    - name: orc_L_hand
       rect:
         serializedVersion: 2
         x: 132
         y: 465
         width: 82
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .263752997, y: .767351389}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcBody
+    - name: orc_body
       rect:
         serializedVersion: 2
         x: 414
@@ -113,7 +113,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcLeftHand
+    - name: orc _R_hand
       rect:
         serializedVersion: 2
         x: 791
@@ -123,7 +123,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcPants
+    - name: orc_pants
       rect:
         serializedVersion: 2
         x: 443
@@ -133,25 +133,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcRightLeg
+    - name: orc _L_leg
       rect:
         serializedVersion: 2
         x: 396
         y: 270
         width: 76
         height: 79
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .378746808, y: .921729028}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: OrcLeftLeg
+    - name: orc _R_leg
       rect:
         serializedVersion: 2
         x: 536
         y: 277
         width: 67
         height: 70
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .363400608, y: .924416721}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
