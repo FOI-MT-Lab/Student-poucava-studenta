@@ -5,15 +5,16 @@ public class CharacterController2D : MonoBehaviour {
 
 	public float maxSpeed = 10.0f;
 	bool facingRight = true;
+	Animator animator;
 
 	// Use this for initialization
 	void Start () {
-	
+		animator = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	// FixedUpdate is called every physics step
@@ -21,6 +22,8 @@ public class CharacterController2D : MonoBehaviour {
 
 		// storing the keyboard input in the move variable (-1 or 1)
 		float move = Input.GetAxis ("Horizontal");
+
+		animator.SetFloat ("Speed", Mathf.Abs(move));
 
 		// adding movement (velocity) to our rigidbody (Orc) using a vector
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
