@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CharacterController2D.cs">
     <Files>
-      <File FileName="Assets\Scripts\CharacterController2D.cs" Line="45" Column="45" />
+      <File FileName="Assets\Scripts\CharacterController2D.cs" Line="36" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

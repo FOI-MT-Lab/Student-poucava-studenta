@@ -6,6 +6,17 @@ public class CharacterController2D : MonoBehaviour {
 	public float maxSpeed = 10.0f;
 	bool facingRight = true;
 	Animator animator;
+	public float jumpForce = 100.0f;
+
+	bool grounded = false;
+	// reference to another object which indicates where ground should be
+	public Transform groundCheck;
+	// size of the sphere in which we check for ground
+	float groundRadius = 0.2f;
+	// layer that represents ground
+	public LayerMask whatIsGround;
+
+//	bool doubleJump = true;
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +26,32 @@ public class CharacterController2D : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		// check if the player is grounded and jump has been pressed
+		// Input.GetKeyDown(KeyCode.Space)
+		if (/*(*/grounded /*|| doubleJump)*/ &&  Input.GetAxisRaw("Jump") == 1) {
+			// player is no longer on the ground
+			animator.SetBool ("Ground", false);
+
+			// make the rigidbody jump
+			rigidbody2D.AddForce (new Vector2 (rigidbody2D.position.x, jumpForce));
+
+//			if (!grounded && doubleJump)
+//				doubleJump = false;
+		}
 	}
 
 	// FixedUpdate is called every physics step
 	void FixedUpdate (){
+
+		// constantly check if player is on ground
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+
+		animator.SetBool ("Ground", grounded);
+
+//		if (grounded)
+//			doubleJump = true;
+
+		animator.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 
 		// storing the keyboard input in the move variable (-1 or 1)
 		float move = Input.GetAxis ("Horizontal");
